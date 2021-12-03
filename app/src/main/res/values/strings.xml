@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TiendaDonEmilioP49</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textHome">Tienda Don Emilio es una aplicación desarrollada como ejemplo para el módulo 4b del programa de formación llevado a cabo por la Universidad Nacional de Colombia. Esto en el marco del proyecto Misión TIC 2022, el cual es un programa liderado por el Gobierno con un gran objetivo: formar 100.000 jóvenes y adultos colombianos en programación.</string>
+    <string name="textTitleComments">Mi Comentario</string>
+    <string name="hintComments">Comentario</string>
+    <string name="btBuyProduct">Agregar al Carrito</string>
+    <string name="textTitleAdmin">Mi Perfil</string>
+    <string name="hintName">Nombre</string>
+    <string name="hintAddress">Direccion</string>
+    <string name="hintPhone">Telefono</string>
+    <string name="hintMail">Correo</string>
+    <string name="btSaveAdmin">Guardar Cambios</string>
+    <string name="navigation_edit">Editar Datos</string>
+    <string name="navigate_edit">Editar Datos</string>
+</resources>

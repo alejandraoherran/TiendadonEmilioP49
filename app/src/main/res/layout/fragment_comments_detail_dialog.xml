@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.CommentsDetailDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvComments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textTitleComments"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/sizeTitleComments"
+            android:textColor="@style/GreenText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinnerScores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/hintComments"
+                android:inputType="textMultiLine"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btSaveComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/primaryDarkColor"
+                android:text="Guardar Comentario"
+                android:textColor="@color/primaryTextColor"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

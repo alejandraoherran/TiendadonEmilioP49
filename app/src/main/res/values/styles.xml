@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#00FF00</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+
+    </style>
+</resources>

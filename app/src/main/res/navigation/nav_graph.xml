@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_orderFragment"
+            app:destination="@id/navOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navOrderFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_orderFragment_to_comentsFragment"
+            app:destination="@id/navComentsFragment" />
+        <action
+            android:id="@+id/action_orderFragment_to_orderDetailDialogFragment2"
+            app:destination="@id/navOrderDetailDialogFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/navComentsFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.ComentsFragment"
+        android:label="fragment_coments"
+        tools:layout="@layout/fragment_coments" >
+        <action
+            android:id="@+id/action_comentsFragment_to_adminFragment"
+            app:destination="@id/navAdminFragment" />
+        <action
+            android:id="@+id/action_comentsFragment_to_commentsDetailDialogFragment"
+            app:destination="@id/navCommentsDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navAdminFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_adminDetailDialogFragment"
+            app:destination="@id/navAdminDetailDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navCommentsDetailDialogFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.CommentsDetailDialogFragment"
+        android:label="fragment_comments_detail_dialog"
+        tools:layout="@layout/fragment_comments_detail_dialog" />
+    <fragment
+        android:id="@+id/navAdminDetailDialogFragment"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.AdminDetailDialogFragment"
+        android:label="AdminDetailDialogFragment"
+        tools:layout="@layout/fragment_admin_detail_dialog">
+        <action
+            android:id="@+id/action_navAdminFragment_to_adminDetailFragmentDialog"
+            app:destination="@+id/navAdminDetailDialogFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navOrderDetailDialogFragment2"
+        android:name="com.misiontic2022.tiendadonemiliop49.view.ui.fragments.OrderDetailDialogFragment"
+        android:label="OrderDetailDialogFragment"
+        tools:layout="@layout/fragment_order_detail_dialog"/>
+</navigation>
